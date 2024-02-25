@@ -8,17 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showingBsd = false
+    
     var body: some View {
         NavigationView {
             VStack {
                 NavigationLink(destination: ListView()) {
                     Text("Button title")
                 }
-                NavigationLink(destination: ListView()) {
+                NavigationLink(destination: BannersView()) {
                     Text("Gallery screen")
                 }
-                NavigationLink(destination: ListView()) {
-                    Text("Bottom sheet")
+                Button("Bottom sheet") {
+                    showingBsd.toggle()
+                }
+                .sheet(isPresented: $showingBsd) {
+                    Text("Bottom sheet in swift UI )))")
+                        .presentationDetents([.medium, .large])
                 }
             }
             .padding()
