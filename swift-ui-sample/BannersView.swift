@@ -40,7 +40,7 @@ struct BannersView: View {
         ScrollViewReader { pageScroller in
             ScrollView(.horizontal) {
                 LazyHStack {
-                    ForEach(items , id: \.self) { item in
+                    ForEach(items , id: \.id) { item in
                         AsyncImage(
                             url: item.url,
                             content: { image in
@@ -61,8 +61,15 @@ struct BannersView: View {
                 }
             }
             .onAppear {
-                withAnimation {
-                    scrollProxy?.scrollTo(items[6].id, anchor: .center)
+                Task { @MainActor in
+                    var i = 0
+                    while i < items.count {
+                        try await Task.sleep(for: .seconds(5))
+                        withAnimation {
+                            scrollProxy?.scrollTo(items[i].id, anchor: .center)
+                        }
+                        i += 1
+                    }
                 }
             }
         }
