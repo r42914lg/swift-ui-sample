@@ -13,6 +13,7 @@
 		990EE1222B8A831E00850D61 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 990EE1212B8A831E00850D61 /* Preview Assets.xcassets */; };
 		990EE1292B8A867D00850D61 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990EE1282B8A867D00850D61 /* ListView.swift */; };
 		993401BA2B8B94D300ABC2ED /* BannersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993401B92B8B94D300ABC2ED /* BannersView.swift */; };
+		99F518C52B8E431200A3DC3D /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F518C42B8E431200A3DC3D /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		990EE1212B8A831E00850D61 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		990EE1282B8A867D00850D61 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		993401B92B8B94D300ABC2ED /* BannersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannersView.swift; sourceTree = "<group>"; };
+		99F518C42B8E431200A3DC3D /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				990EE1202B8A831E00850D61 /* Preview Content */,
 				990EE1282B8A867D00850D61 /* ListView.swift */,
 				993401B92B8B94D300ABC2ED /* BannersView.swift */,
+				99F518C42B8E431200A3DC3D /* ContentViewModel.swift */,
 			);
 			path = "swift-ui-sample";
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				990EE11D2B8A831D00850D61 /* ContentView.swift in Sources */,
 				990EE11B2B8A831D00850D61 /* swift_ui_sampleApp.swift in Sources */,
 				990EE1292B8A867D00850D61 /* ListView.swift in Sources */,
+				99F518C52B8E431200A3DC3D /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
