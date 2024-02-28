@@ -12,17 +12,17 @@ struct ListView: View {
     @ObservedObject var catsVM = CatsViewModel()
     
     var body: some View {
-        NavigationView {
-            ScrollView(.vertical) {
-                LazyVStack {
-                    ForEach($catsVM.items , id: \._id) { $item in
-                        Text(item.text)
+        ScrollView(.vertical) {
+            LazyVStack {
+                ForEach($catsVM.items , id: \._id) { $item in
+                    NavigationLink(destination: DetailedView(argDetId: item._id)) {
+                        Text(item._id.dropLast(10))
                             .id(item._id)
                             .padding(30)
+                        }
                     }
                 }
-                .padding()
-            }
+            .padding()
         }
     }
 }

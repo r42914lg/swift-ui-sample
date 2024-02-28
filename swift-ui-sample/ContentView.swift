@@ -14,7 +14,7 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 NavigationLink(destination: ListView()) {
-                    Text("Button title")
+                    Text("Cat list")
                 }
                 NavigationLink(destination: BannersView()) {
                     Text("Gallery screen")
