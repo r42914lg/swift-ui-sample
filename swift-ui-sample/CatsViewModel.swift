@@ -16,7 +16,11 @@ class CatsViewModel: ObservableObject {
         }
     }
     
-    func fetchData() {
+    init() {
+        fetchData()
+    }
+    
+    private func fetchData() {
         AF.request("https://cat-fact.herokuapp.com/facts").responseDecodable(of: [CatFact].self) { response in
             guard let items = response.value else {
                 return
@@ -25,7 +29,7 @@ class CatsViewModel: ObservableObject {
         }
     }
     
-    func persistCache() {
+    private func persistCache() {
         let realm = try! Realm()
         try! realm.write() {
             for cat in self.items {

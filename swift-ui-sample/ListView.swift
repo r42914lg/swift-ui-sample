@@ -8,12 +8,21 @@
 import SwiftUI
 
 struct ListView: View {
+    
+    @ObservedObject var catsVM = CatsViewModel()
+    
     var body: some View {
         NavigationView {
-            VStack {
-                Text("dsfsdfsf")
+            ScrollView(.vertical) {
+                LazyVStack {
+                    ForEach($catsVM.items , id: \._id) { $item in
+                        Text(item.text)
+                            .id(item._id)
+                            .padding(30)
+                    }
+                }
+                .padding()
             }
-            .padding()
         }
     }
 }

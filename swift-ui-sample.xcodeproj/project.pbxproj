@@ -14,6 +14,7 @@
 		990EE1222B8A831E00850D61 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 990EE1212B8A831E00850D61 /* Preview Assets.xcassets */; };
 		990EE1292B8A867D00850D61 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990EE1282B8A867D00850D61 /* ListView.swift */; };
 		993401BA2B8B94D300ABC2ED /* BannersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993401B92B8B94D300ABC2ED /* BannersView.swift */; };
+		994F6B572B8F17270039091C /* CatFact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994F6B562B8F17270039091C /* CatFact.swift */; };
 		99A02FBB2B8F05A400747644 /* CatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A02FBA2B8F05A400747644 /* CatsViewModel.swift */; };
 		99F518C52B8E431200A3DC3D /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F518C42B8E431200A3DC3D /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		990EE1212B8A831E00850D61 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		990EE1282B8A867D00850D61 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		993401B92B8B94D300ABC2ED /* BannersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannersView.swift; sourceTree = "<group>"; };
+		994F6B562B8F17270039091C /* CatFact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFact.swift; sourceTree = "<group>"; };
 		99A02FBA2B8F05A400747644 /* CatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsViewModel.swift; sourceTree = "<group>"; };
 		99F518C42B8E431200A3DC3D /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		B1815E820E8D6A0C3FE156CC /* Pods_swift_ui_sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_ui_sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,7 +61,6 @@
 				E9B135B12539FCC66A344C39 /* Pods-swift-ui-sample.debug.xcconfig */,
 				E0BF58C516C7C9A5FFB75724 /* Pods-swift-ui-sample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -92,6 +93,7 @@
 				993401B92B8B94D300ABC2ED /* BannersView.swift */,
 				99F518C42B8E431200A3DC3D /* ContentViewModel.swift */,
 				99A02FBA2B8F05A400747644 /* CatsViewModel.swift */,
+				994F6B562B8F17270039091C /* CatFact.swift */,
 			);
 			path = "swift-ui-sample";
 			sourceTree = "<group>";
@@ -220,6 +222,7 @@
 			files = (
 				993401BA2B8B94D300ABC2ED /* BannersView.swift in Sources */,
 				99A02FBB2B8F05A400747644 /* CatsViewModel.swift in Sources */,
+				994F6B572B8F17270039091C /* CatFact.swift in Sources */,
 				990EE11D2B8A831D00850D61 /* ContentView.swift in Sources */,
 				990EE11B2B8A831D00850D61 /* swift_ui_sampleApp.swift in Sources */,
 				990EE1292B8A867D00850D61 /* ListView.swift in Sources */,
@@ -267,7 +270,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -330,7 +333,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
